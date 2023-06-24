@@ -1,0 +1,97 @@
+// 使footer置底 start
+::selection{
+  background:$secondary-light;
+  color: $primary;
+}
+::-moz-selection {
+  background:$secondary-light;
+  color: $primary;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// 使footer置底 end
+
+body {
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+input {
+  // 取消ios預設樣式
+  appearance: none;
+}
+
+input[type='checkbox'] {
+  appearance: checkbox;
+}
+
+input[type='radio'] {
+  appearance: radio;
+}
+
+.btn:disabled {
+  border: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 48;
+}
+
+main {
+  margin-top: 5.625rem;
+}
+
+.btn-outline-dark {
+  &:hover,
+  &:active {
+    background-color: $gray-900;
+    color: $light;
+  }
+}
+
+.btn-primary {
+  background-color: $gray-900;
+  &:hover,
+  &:active {
+    background-color: $light;
+    color: $primary;
+  }
+}
